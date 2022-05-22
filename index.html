@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>KazahSushiWeb</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <main class="main">
@@ -62,8 +63,8 @@
                 </div>
                 <div class="header__right">
                     <div class="location">
-                        <p class="location__text"></p>
-                        <p class="location__city"></p>
+                        <p class="location__text">Город:</p>
+                        <p class="location__city">Бишкек</p>
                     </div>
                     <div class="header__menu">
                         <nav class="list">
@@ -79,6 +80,32 @@
                         <button class="search"></button>
                     </div>
                 </div>
+            </div>
+            <div class="sushi__slider">
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img src="./img/Главный баннерslide.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img src="./img/Главный баннерslide.png" alt="">
+    </div>
+    <div class="swiper-slide">
+        <img src="./img/Главный баннерslide.png" alt="">
+    </div>
+</div>
+  <div class="swiper-pagination"></div>
+</div>
+
+            </div>
+            <div class="products">
+                <div class="products__item"></div>
+                <div class="products__item">
+                    <div class="products__item_half"></div>
+                    <div class="products__item_half"></div>
+                </div>
+                <div class="products__item"></div>
+                <div class="products__item"></div>
             </div>
         </section>
         <aside class="side-rigth"> <div class="cart">
@@ -100,5 +127,7 @@
      </aside>
     </main>
 <script src="index.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
 </body>
 </html>
