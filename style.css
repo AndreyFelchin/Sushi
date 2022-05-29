@@ -4,14 +4,15 @@
 }
 
 .main {
+    position: relative;
     display: flex;
-    height: 100vh;
     max-width: 1940px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
 .side-left {
+    position: fixed;
     max-width: 320px;
     width: 100%;
     padding: 30px 25px 0 60px;
@@ -350,14 +351,63 @@
 }
 
 .products {
+    
+}
+
+.products .container {
+    max-width: 950px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .products__item {
+    position: relative;
     width: calc(50% - 15px);
     height: 200px;
-    background-color: red;
     border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.products__item_half {
+    position: relative;
+    width: calc(50% - 11px);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.products__item:nth-child(1) {
+    background-image: url(./img/food1.png);
+}
+
+.products__item:nth-child(2) .products__item_half:nth-child(1) {
+    background-image: url(./img/food2.png);
+}
+
+.products__item:nth-child(2) .products__item_half:nth-child(2) {
+    background-image: url(./img/food3.png);
+}
+
+.products__item:nth-child(3) {
+    background-image: url(./img/food4.png);
+}
+
+.products__item:nth-child(4) {
+    background-image: url(./img/food5.png);
+}
+
+.products__item p {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffff;
 }
